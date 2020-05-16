@@ -13,23 +13,88 @@ body {
 nav {
     background-color: white;
     padding: 12px;
-    transition: ease-in 200ms;
+    transition: ease-in 400ms;
 }
 
 nav h1 {
     text-align: center;
     font-family: 'Roboto', sans-serif;
+    transition: 700ms;
+    color: #333;
     -moz-user-select: none;
     -webkit-user-select: none;
     user-select: none;
 }
 
 header {
-    margin: auto;
-    position: relative;
+    display: block;
+}
+
+header div {
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    opacity: 0;
+    animation-delay: 1s;
+    animation-duration: 800ms;
+    animation-fill-mode: forwards;
+    margin-right: 0;
     display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+    grid-template-columns: 20% 80%;
+    margin-top: 24px;
+    width: 40%;
+    border-radius: 20px;
+    padding: 20px;
+    height: 50px;
+}
+
+@keyframes reasonLeft{
+    0% {
+        opacity: 0;
+        background-color: #fff;
+    }
+    100% {
+        opacity: 1;
+        margin-left: 2%;
+    }
+}
+@keyframes reasonRight{
+    0% {
+        opacity: 0;
+        background-color: #fff;
+    }
+    100% {
+        opacity: 1;
+        margin-right: 2%;
+    }
+}
+
+header div p {
+    margin: auto;
+}
+
+.reasonLeft {
+    animation-name: reasonLeft;
+}
+.reasonRight {
+    float: right;
+    animation-name: reasonRight;
+}
+
+.r2 {
+    animation-delay: 1700ms;
+}
+.r3 {
+    animation-delay: 2700ms;
+    margin-top: 140px;
+}
+.r4 {
+    animation-delay: 3700ms;
+}
+
+header div img {
+    width: 50px;
+    height: 50px;
 }
 
 #register {
