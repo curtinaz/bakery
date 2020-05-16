@@ -29,11 +29,18 @@ nav h1 {
     color: #333;
 }
 
-header {
-    display: block;
+nav h1:hover {
+    transition: 300ms;
+    letter-spacing: 6px;
+    color: indigo;
 }
 
-header div {
+header {
+    display: block;
+    background-color: #333;
+}
+
+.reason {
     font-family: 'Roboto', sans-serif;
     background-color: white;
     opacity: 0;
@@ -50,26 +57,26 @@ header div {
     height: 50px;
     max-width: 400px;
     text-align: left;
+    transition: 800ms;
+    border: solid rgba(24, 24, 24, 0.1);
 }
 
 @keyframes reasonLeft{
     0% {
         opacity: 0;
-        background-color: #fff;
     }
     100% {
         opacity: 1;
-        margin-left: 2%;
+        margin-left: 18px;
     }
 }
 @keyframes reasonRight{
     0% {
         opacity: 0;
-        background-color: #fff;
     }
     100% {
         opacity: 1;
-        margin-right: 2%;
+        margin-right: 18px;
     }
 }
 
@@ -101,9 +108,40 @@ header div img {
     height: 50px;
 }
 
-#register {
+#buttons {
+    margin-left: 18px;
+    margin-right: 18px;
+}
+
+#start {
+    margin-top: 20px;
     padding: 8px;
-    background-color: coral;
+    background-color: white;
     border-radius: 5px;
-    position: absolute;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-size: medium;
+    opacity: 0;
+    animation-name: bottom;
+    transition: 400ms;
+    animation-delay: 4700ms;
+    animation-fill-mode: forwards;
+    animation-duration: 800ms;
+}
+
+#start:hover {
+    transition: 200ms;
+    background-color: indianred;
+    color: white;
+}
+
+@keyframes bottom {
+    from {
+        opacity: 0;
+        margin-top: 80px;
+    }
+    to {
+        margin-top: 20px;
+        opacity: 1;
+    }
 }
