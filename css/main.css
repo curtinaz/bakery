@@ -32,7 +32,6 @@ nav h1 {
 nav h1:hover {
     transition: 300ms;
     letter-spacing: 6px;
-    color: indigo;
 }
 
 header {
@@ -49,14 +48,12 @@ header {
     animation-fill-mode: forwards;
     display: grid;
     grid-column-gap: 15px;
-    grid-template-columns: 20% 80%;
     margin-top: 24px;
     min-width: 40%;
     border-radius: 20px;
     padding: 20px 40px 20px 20px;
     height: 50px;
     max-width: 250px;
-    text-align: left;
     border: solid rgba(24, 24, 24, 0.1);
 }
 
@@ -83,12 +80,20 @@ header div p {
     margin: auto;
 }
 
+header div img {
+    margin: auto;
+}
+
 .reasonLeft {
     animation-name: reasonLeft;
+    grid-template-columns: 20% 80%;
+    text-align: left;
 }
 .reasonRight {
     float: right;
     animation-name: reasonRight;
+    grid-template-columns: 80% 20%;
+    text-align: right;
 }
 
 .r2 {
@@ -139,7 +144,7 @@ header div img {
         margin-top: 80px;
     }
     to {
-        margin-top: 20px;
+        margin-top: 24px;
         opacity: 1;
         transition: 300ms;
     }
