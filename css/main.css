@@ -149,3 +149,50 @@ header div img {
         transition: 300ms;
     }
 }
+
+/* Start */
+
+.form {
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    opacity: 0;
+    animation-delay: 1s;
+    animation-duration: 1700ms;
+    animation-fill-mode: forwards;
+    animation-name: bottom;
+    min-width: 40%;
+    border-radius: 20px;
+    padding: 20px;
+    min-height: 50px;
+    max-width: 250px;
+    border: solid rgba(24, 24, 24, 0.1);
+    margin: auto;
+    margin-top: 24px;
+}
+
+.form h3:hover {
+    color: brown;
+}
+
+.label {
+    margin-top: 15px;
+    font-family: 'Roboto', sans-serif;
+    margin-right: 10px;
+}
+
+input[name="name"] {
+    border: solid rgba(24, 24, 24, 0.1);
+    width: 50%;
+    height: 24px;
+    border-radius: 10px;
+    font-size: 14px;
+    padding: 0 10px 0 10px;
+    transition: 400ms;
+}
+
+input[name="name"]:hover {
+    transition: 400ms;
+    border-radius: 5px;
+}
+
+
